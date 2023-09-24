@@ -55,7 +55,17 @@ console.log("bvbdvbdjvnd  ", error );
 
     return null; 
 }
+async logout(){
+try{
 
+await this.account.client.deleteDessions();
+
+} catch (error) {
+console.log("nvuvjdv" , error);
+
+}
+
+}
 }
 const authService = new AuthService();
 
